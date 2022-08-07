@@ -23,7 +23,7 @@ pipeline {
             steps {
               container('docker') {
                 script {
-                  myBuild = docker.build "us.gcr.io/precise-armor-304909/myweb:1.2"
+                  myBuild = docker.build "us.gcr.io/levydll/myweb:1.2"
                 }
               }
             }
